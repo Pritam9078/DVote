@@ -1,0 +1,15 @@
+{
+  "network": "localhost",
+  "timestamp": "2025-10-27T14:48:46.070Z",
+  "gasOptimized": true,
+  "contracts": {
+    "GovernanceToken": "0xc6e7DF5E7b4f2A278906862b61205850344D4e7d",
+    "Treasury": "0x59b670e9fA9D0A427751Af201D676719a970857b",
+    "DAO": "0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1"
+  },
+  "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "gasSettings": {
+    "gasPrice": "market rate",
+    "gasLimit": 3000000
+  }
+}

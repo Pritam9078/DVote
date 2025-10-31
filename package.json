@@ -1,0 +1,41 @@
+{
+  "name": "dvote-dao-governance",
+  "version": "1.0.0",
+  "description": "A fully on-chain governance platform for DAOs with transparent treasury control",
+  "main": "index.js",
+  "scripts": {
+    "compile": "cd backend && npm run compile",
+    "test": "cd backend && npm run test",
+    "deploy": "cd backend && npm run deploy:localhost",
+    "deploy:localhost": "cd backend && npm run deploy:localhost",
+    "deploy:sepolia": "./deploy-simple.sh",
+    "node": "cd backend && npm run node",
+    "dev": "cd frontend && npm run dev",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-backend": "cd backend && npm install",
+    "build": "cd frontend && npm run build",
+    "clean": "cd backend && npm run clean",
+    "websocket": "node websocket-server.js",
+    "start-all": "concurrently \"npm run node\" \"npm run websocket\" \"npm run dev\""
+  },
+  "keywords": [
+    "dao",
+    "governance",
+    "defi",
+    "ethereum",
+    "solidity"
+  ],
+  "author": "DVote Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "concurrently": "^9.2.1",
+    "dotenv": "^16.3.1",
+    "ws": "^8.18.3"
+  }
+}

@@ -1,0 +1,20 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="faviconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e5e7eb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#d1d5db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9ca3af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Simple 3D D shape for favicon -->
+  <rect x="4" y="8" width="4" height="16" fill="url(#faviconGrad)"/>
+  <path d="M8 8 L8 24 L16 24 C20 24 24 20 24 16 C24 12 20 8 16 8 L8 8 Z" fill="url(#faviconGrad)"/>
+  
+  <!-- 3D effect -->
+  <path d="M8 8 L10 6 L18 6 C22 6 26 10 26 14 C26 18 22 22 18 22 L16 24 C20 24 24 20 24 16 C24 12 20 8 16 8 L8 8 Z" fill="#f3f4f6"/>
+  
+  <!-- Inner hole -->
+  <ellipse cx="16" cy="16" rx="6" ry="6" fill="#374151"/>
+  <ellipse cx="15.5" cy="15.5" rx="4" ry="4" fill="#1f2937"/>
+</svg>

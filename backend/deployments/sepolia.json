@@ -1,0 +1,30 @@
+{
+  "network": {
+    "name": "hardhat",
+    "chainId": 31337,
+    "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "deploymentTime": "2025-10-14T16:32:21.255Z"
+  },
+  "contracts": {
+    "GovernanceToken": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "deploymentTx": "0xaf405a1bc313bde446a926897d56efe4bdf2a2848f3d3c8ef9dc95a7ce20bd67"
+    },
+    "Treasury": {
+      "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+      "deploymentTx": "0xbb56cbd09e83bf9796fd8a289438d446a6779dea7281fe543e19837a86b44794"
+    },
+    "DAO": {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "deploymentTx": "0x0367d4614f501b482d3211acbf2b00a52721659231e40cf508b98338bb0d3727"
+    }
+  },
+  "initialSetup": {
+    "treasuryFunding": "1.0 ETH",
+    "tokenDistribution": "1000 DVOTE per test account",
+    "treasuryOwner": "DAO Contract",
+    "allowedTargets": [
+      "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
+    ]
+  }
+}
