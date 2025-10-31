@@ -13,7 +13,7 @@
 | **Root Directory** | `backend` |
 | **Runtime** | `Node` |
 | **Build Command** | `npm install` |
-| **Start Command** | `node server.js` |
+| **Start Command** | `npm start` |
 | **Health Check Path** | `/health` |
 | **Auto-Deploy** | `On` |
 | **Pre-Deploy Command** | *(Leave empty)* |
