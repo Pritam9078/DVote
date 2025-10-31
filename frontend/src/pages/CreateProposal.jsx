@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 
 import { CONTRACTS, LOCALHOST_ADDRESSES, SEPOLIA_ADDRESSES } from '../config/contracts';
+import { DAO_CONTRACT_ADDRESS } from '../config.js';
 import { DAO_ABI, TREASURY_ABI } from '../config/abis';
 import PinataService from '../services/ipfs';
 import IPFSFileUpload from '../components/IPFSFileUpload';
@@ -956,8 +957,8 @@ export default function CreateProposal() {
 
     console.log('[DVote] ✅ Wallet connected:', { walletAddress, chainId });
 
-    // Get current network and expected addresses
-    const currentDAO = CONTRACTS.DAO.address;
+    // Get current network and expected addresses - use the working DAO address
+    const currentDAO = DAO_CONTRACT_ADDRESS; // Use the original working address
     const currentChainId = chainId;
     
     console.log('[DVote] Current state:', {
