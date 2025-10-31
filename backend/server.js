@@ -40,8 +40,30 @@ app.use(cors({
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
-// Serve static frontend files
-app.use(express.static(path.join(__dirname, 'public')));
+// Serve static frontend files (only in development)
+if (process.env.NODE_ENV !== 'production') {
+  app.use(express.static(path.join(__dirname, 'public')));
+}
+
+// Root API endpoint
+app.get('/', (req, res) => {
+  res.json({
+    name: 'DVote Backend API',
+    version: '1.0.0',
+    description: 'Backend API for DVote DAO Governance Platform',
+    endpoints: {
+      health: '/health',
+      proposals: '/api/proposals',
+      users: '/api/users',
+      treasury: '/api/treasury',
+      ipfs: '/api/ipfs'
+    },
+    github: 'https://github.com/Pritam9078/dvt',
+    frontend: process.env.NODE_ENV === 'production' 
+      ? 'Deployed separately as static site' 
+      : 'http://localhost:5173'
+  });
+});
 
 // Health check endpoint
 app.get('/health', (req, res) => {
@@ -269,12 +291,13 @@ app.use((error, req, res, next) => {
   });
 });
 
-// Catch-all handler: serve React app for all non-API routes
+// Catch-all handler: serve React app for all non-API routes (only in development)
 app.get('*', (req, res) => {
-  // Only serve React app for non-API routes
-  if (!req.originalUrl.startsWith('/api/') && !req.originalUrl.startsWith('/health')) {
+  // Only serve React app for non-API routes in development
+  if (process.env.NODE_ENV !== 'production' && !req.originalUrl.startsWith('/api/') && !req.originalUrl.startsWith('/health')) {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
   } else {
+    // In production or for API routes, return 404
     res.status(404).json({
       error: 'Not found',
       message: `Route ${req.originalUrl} not found`
