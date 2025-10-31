@@ -51,4 +51,8 @@ VITE_WALLETCONNECT_PROJECT_ID=your_actual_project_id
 - [ ] Verify proposal metadata storage
 
 ---
-*DVote DAO Governance Platform - Decentralized Voting Made Simple*
+**DVote DAO Governance Platform - Decentralized Voting Made Simple**
+
+🌐 **GitHub Repository**: https://github.com/Pritam9078/dvt  
+📱 **Custom Logo**: Integrated throughout the application  
+🔗 **IPFS Ready**: Real Pinata credentials configured

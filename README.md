@@ -8,31 +8,36 @@ DVote is a fully on-chain decentralized autonomous organization (DAO) governance
 
 ![DVote Logo](./frontend/public/dvote-logo.png)
 
-## 🌟 Features
+## 🗳️ DVote DAO Governance Platform
 
-### 🏛️ **Governance System**
-- **Proposal Creation**: Submit governance proposals with detailed descriptions and IPFS metadata
-- **Voting Mechanism**: Secure on-chain voting with governance token weights
-- **Execution System**: Automatic proposal execution after successful votes
-- **Quorum Requirements**: Configurable participation thresholds
+A professional-grade decentralized autonomous organization (DAO) platform built on Ethereum, featuring token-based governance, proposal management, and treasury operations with custom branding and real IPFS integration.
 
-### 💰 **Treasury Management**
-- **Multi-Token Support**: Manage ETH and ERC-20 tokens
-- **Withdrawal Controls**: Governance-controlled treasury operations
-- **Real-time Balance Tracking**: Live treasury status and analytics
-- **Security Features**: Pause/unpause functionality via governance
+## 🌟 Live Application
 
-### 🔐 **Token Economics**
-- **ERC-20 Governance Token**: Custom DVT token with voting power
-- **Delegation System**: Self-delegation and proxy voting
-- **Supply Management**: Controlled minting and burning mechanisms
-- **Staking Integration**: Token locking for enhanced security
+- **GitHub Repository**: https://github.com/Pritam9078/dvt
+- **Frontend**: http://localhost:3000 (when running locally)
+- **Backend API**: http://localhost:3001 (when running locally)
 
-### 📊 **Analytics & Monitoring**
-- **Real-time Dashboard**: Live governance statistics and metrics
-- **Voting Analytics**: Participation rates and voting patterns
-- **Treasury Insights**: Financial analytics and transaction history
-- **Member Management**: User profiles and voting history
+## 🚀 Key Features
+
+### 🏛️ Advanced Governance System
+- **Token-Based Voting**: DVT token holders participate in governance decisions
+- **Multi-Type Proposals**: Specialized forms for different proposal types
+- **Treasury Management**: Decentralized fund management and allocations
+- **Real-Time Updates**: WebSocket-powered live proposal and voting updates
+- **Custom Branding**: Integrated DVote logo throughout the application
+
+### � Proposal Types with Custom Forms
+- **Simple Polls**: Community sentiment with configurable voting options
+- **Treasury Withdrawals**: ETH withdrawal with recipient validation and amount controls  
+- **Token Transfers**: ERC-20 token transfers with contract address validation
+- **Custom Actions**: Smart contract interactions with calldata input
+
+### � Technical Infrastructure
+- **IPFS Integration**: Real Pinata credentials for decentralized file storage
+- **Multi-Network Support**: Localhost and Sepolia testnet compatibility
+- **Modern UI/UX**: React 18 with Tailwind CSS and smooth animations
+- **Web3 Integration**: Wagmi + RainbowKit for seamless wallet connections
 
 ## 📋 Smart Contract Addresses (Sepolia Testnet)
 
